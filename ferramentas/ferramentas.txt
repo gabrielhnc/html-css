@@ -1,0 +1,30 @@
+ferramentas, sites, extensões e atalhos que ajudam na programação:
+
+ferramentas: 
+visual studio code = editor de código
+gimp = editor de imagens
+handbrake = conversor de vídeos para outros formatos
+
+sites: 
+iplocation = ver o ip
+emojipedia = pegar emojis ( &#x -> botar isso antes de colocar o codigo do emoji )
+unsplash e pexels = pegar imagens sem diretos autorais (pexels serve pra video tbm)
+icon archive, favicon.cc e favicon.io = achar favicons ( o favicon.io é o melhor )
+dev.w3.org = encontrar as obsolete tags
+adobe color, paletton e coolors = encontram e fazem paletas de cores
+W3Schools = encontrar safe combination
+whatfont.is, fontsquirrel e myfonts.com = detecta fonte dentro de uma imagem 
+(whatfont.is é o melhor)
+googlefonts = pegar fontes diversificadas
+mockflow = planejamento de sites
+
+extensões:
+colorzilla (pega cores com facilidade de qualquer site)
+fonts ninja (indica qual é o tipo de fonte)
+window resizer (ver o tamanho da largura/altura da pagina)
+
+atalhos:
+Ctrl + shift + p (colocar uma tag em algum lugar mais rapido)
+Segurar o alt e ir clicando nas partes para mudar detalhes de varios termos
+
+

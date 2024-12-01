@@ -1,0 +1,89 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-image: linear-gradient(to right,#7BBBCC, #ACCCD5);
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    width: 350px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    background-attachment: fixed;
+}
+
+.hide:hover{
+    color: red;
+    font-weight: bold;
+    background-color: white;
+    width: 400px;
+}
+
+.hide > p{
+    display: none;
+}
+
+.hide:hover > p{
+    display: block;
+}
+
+.importante{
+    font-weight: bolder;
+}
+
+#modificar{
+    background-color: white;
+}
+
+#d1{
+    background-color: white;
+    display: inline-block;
+    text-align: center;  
+    font-weight: bolder;
+}    
+
+#d2{
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#d3{
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#d1:hover{
+    background-color: #1877F2;
+}
+
+#d2:hover{
+    background-image: linear-gradient(to right, #E21033, #F94D00, #F95A00, #F7BB00);
+}
+
+#d3:hover{
+    background-color: rgb(175, 68, 68);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+

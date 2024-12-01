@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+        /* SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children (filho)
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:active{
+            color: black;
+        }
+
+        .especial::before{
+            content: '⇐';
+        }
+
+        .especial::after{
+            content: '⇒';
+        }

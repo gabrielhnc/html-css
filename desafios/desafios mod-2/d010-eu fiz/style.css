@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format(otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 0;
+    background-color: #84E1AD;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #35BD72, #1A5C38);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 6px 3px 6px rgba(0, 0, 0, 0.336)
+}
+
+#p1{
+    font-weight: normal;
+}
+
+#nav{
+    text-align: left;
+}
+
+#nav > a{
+    text-decoration: none;
+    color: #95DFB8;
+    padding-right: 25px;
+}
+
+#nav > a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    padding: 10px 25px 10px 25px;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.349);
+    border-radius: 0 0 10px 10px;
+}
+
+.p2{
+    text-indent: 30px;
+}
+
+#droid{
+    font-family: 'android';
+    font-size: 2em;
+    margin-top: 15px;
+    color: #1D3727;
+}
+
+.gradiente{
+    background-image: linear-gradient(to right, #86E3B0, white);
+    font-family: 'android';
+    color: #19633C;
+    padding-left: 8px;
+}
+
+.c1{
+    color: #28794f;
+    font-weight: bolder;
+}
+
+.img{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+#video{
+    background-color: #1A5C38;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#curiosidades{
+    background-color: #C5EBD6;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+#aprender{
+    background-color: #2FA866;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #1A5C38;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+footer > p{
+    margin: 0;
+}
+
+.negrito{
+    font-weight: bolder;
+}

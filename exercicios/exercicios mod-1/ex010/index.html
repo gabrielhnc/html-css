@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links</h1>
+    <h2>Links externos</h2>
+    <p>Você pode acessar este site clicando <a href="https://facebook.com/" target="_blank" rel="external">aqui!</a></p>
+    <p>Além desse site, voce também pode entrar nesse clicando <a href="https://youtube.com/" target="_blank" rel="external">aqui!</a></p>
+    <h2>Links internos</h2>
+    <p>Caso voce queira ir para a minha segunda página, clique <a href="pag002.html" rel="next" target="_self">aqui!</a></p>
+    <p>Voce também pode acessar a terceira página do nosso site! Clique <a href="terceira pagina/pag003.html" rel="next" target="_self">aqui</a> e você sera direcionado até ela.</p>
+    <h3>Exemplo de site com "nofollow"</h3>
+    <p><a href="https://hostnet.com" rel="nofollow" target="_blank" rel="external">Vá para o hostnet aqui!</a></p>
+    <h2>Links para downloads</h2>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf" target="_blank">Baixar o livro em PDF</a></li> <!--Não deu certo, navegador nao colaborou-->
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
