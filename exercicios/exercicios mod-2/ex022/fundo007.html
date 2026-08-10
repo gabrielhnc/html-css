@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 95vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            left: 50%;
+            top: 50%;
+            background-color: yellow;
+
+            transform: translate(-50%, -50%);
+        }   
+
+        /*
+            Div pai (container) com a propriedade relative, e a div filha (conteudo) com absolute
+            Aplicando left e top, o ponto de referencia seria o canto a esquerda superior, deixando totalmente ao centro
+            Com a propriedade transform, aplicando translate -50%, o a div filha se alinha de forma centralizada
+        */
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

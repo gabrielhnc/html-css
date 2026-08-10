@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
-            height: 98vh;
+            /* height: 98vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover; 
+            background-attachment: fixed;  */
             
             /*
                 background-size: auto; -> Padrão que o background-size traz
                 background-size: cover; -> Cobre a tela independente do tamanho da tela
                 background-size: contain
+                backgroung-attachment: vinculo -> scroll / fixed
+
+                ShortHand Background -> Ordem
+                    color > image > position > repeat > [size] > attachment (POSSIVEL USO DE UMA BARRA DIVIDINDO A POSITION E SIZE -> CENTER CENTER / COVER)
             */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid gray;
@@ -35,7 +43,14 @@
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, deleniti. Quis iure, adipisci beatae aliquid numquam blanditiis eveniet ab rem aperiam repudiandae maiores exercitationem consequuntur quisquam, saepe aspernatur architecto eum?
         Possimus minima, quo, placeat delectus aspernatur nesciunt ea laboriosam excepturi porro suscipit quas nobis recusandae adipisci? Accusamus minima numquam repudiandae commodi quia ea necessitatibus ratione, debitis, magni, maiores culpa rem.
-        Soluta eum fuga earum animi accusantium! Facere blanditiis eos nisi cupiditate nulla laudantium, odit odio sunt in quaerat reprehenderit autem aperiam soluta nobis quibusdam quod eius temporibus distinctio iure iusto.</p>
+        Soluta eum fuga earum animi accusantium! Facere blanditiis eos nisi cupiditate nulla laudantium, odit odio sunt in quaerat reprehenderit autem aperiam soluta nobis quibusdam quod eius temporibus distinctio iure iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nostrum nobis omnis sunt voluptatem iusto ipsam amet qui dolorum unde eos culpa illum sit, neque quis cum perferendis iste dicta?
+        Porro ratione dolores dignissimos distinctio sunt qui ut eius ducimus corrupti, voluptatem deleniti sequi sapiente aliquam maiores. Laborum ipsum nostrum, id repellendus tenetur similique, magni nam eos aut, molestiae expedita!
+        Rem vel magni ipsum nesciunt distinctio recusandae ratione fuga incidunt in, ut autem, minus cupiditate laboriosam quasi quos saepe molestiae. Voluptate et rerum, incidunt ipsa dolorem suscipit iste voluptatum soluta.
+        Unde suscipit amet dolore illo corporis harum iusto nulla, dolor ut a ea corrupti delectus? Et adipisci, pariatur, minus neque vitae amet, rerum repudiandae fugiat ex sit fuga qui! Facilis?
+        Eius fugiat accusamus vel ipsa eveniet. Aliquam rerum fugit ad beatae reprehenderit dolore dolorem, optio, quis est accusantium iste distinctio non aliquid, atque debitis possimus ratione cupiditate voluptatum! Expedita, similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ab ea assumenda quam quas corporis reprehenderit non, ipsa deserunt soluta, velit voluptate autem? Aliquam, nostrum nulla. Quaerat illum quae nesciunt!
+        Quaerat magni hic, magnam impedit non consequatur iure asperiores quasi eius odit? Autem illum error ullam quos ab? Sequi esse voluptatibus id repudiandae deserunt illo provident nesciunt error ducimus mollitia!
+        Similique quis officiis architecto? Temporibus, velit dolorum minus unde veniam architecto tempore. Odit ex omnis officia a aliquam sunt numquam dolorem, nulla dolor tempora distinctio atque et minus accusantium magnam.
+        Quae vitae numquam, aut modi provident nesciunt dolorum, illo blanditiis earum fugit accusantium esse praesentium? Cum, atque? Ducimus, ratione velit asperiores esse cum rerum quis, perferendis sapiente magnam non et? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate et ullam, odit, cumque dolor, assumenda architecto similique inventore fugit perspiciatis dignissimos beatae? Aut dicta, necessitatibus dolor eum sequi a repellendus! lorem*</p>
     </main>
 </body>
 </html>
