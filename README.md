@@ -8,6 +8,6 @@ Curso de HTML e CSS **(Curso em Video)**
 
 - **[ X ] Módulo 1**
 - **[ X ] Módulo 2**
-- [ ] Módulo 3 (Em processo)
-- [ ] Módulo 4
+- **[ X ] Módulo 3**
+- [ ] Módulo 4 (Em processo)
 - [ ] Módulo 5
