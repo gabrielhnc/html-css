@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead tr th {
+            position: sticky;
+            top: 0;
+            background-color: rgb(51, 51, 51);
+        }
+
+        td, th {
+            border: 2px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            background-color: rgb(179, 177, 177);
+            padding: 10px;
+            border: 2px solid rgb(118, 118, 118);
+            border-bottom: 0;
+        }
+
+        thead, tfoot {
+            background-color: rgb(51, 51, 51);
+            color: white;
+        }
+
+        /* PROPRIEDADE QUE PERMITE PULAR LINHAS E FAZER O EFEITO ZEBRADO NA TABELA -> nth-child(xn) -> valor de x para a quantidade de linhas para que as propriedades do seletor ocorram, para o efeito convencional de zebra, 2n é o indicado ou "ODD", ou seja, celulas impares -> o mesmo para pares "EVEN" */
+
+        tbody tr:nth-child(even) {
+            background-color: rgb(125, 125, 125);
+            color: white;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: white;
+            font-weight: bold;
+        }
+
+        .number {
+            text-align: right;
+        }
+
+        .total {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>TABELAS GRANDES</h1>
+
+    <!--
+        ANATOMIA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR  TD  TH
+            TBODY
+                TR  TD  TH
+            TFOOT
+                TR  TD  TH
+
+        A ORDEM DAS TAGS SEMANTICAS SEMPRE SE MANTEM COM A CABEÇA, CORPO
+        E PE, INDEPENDENTE DA POSIÇÃO NO HTML DAS TAGS
+
+        PROPRIEDADE SCOPE é importante -> 
+        scope: col
+        scope: row
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">12000000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">6000000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">7000000</td>
+            </tr>
+                        <tr>
+                <td>São Paulo</td>
+                <td class="number">12000000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">6000000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">7000000</td>
+            </tr>
+                        <tr>
+                <td>São Paulo</td>
+                <td class="number">12000000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">6000000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">7000000</td>
+            </tr>
+                        <tr>
+                <td>São Paulo</td>
+                <td class="number">12000000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">6000000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">7000000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">6000000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">7000000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">6000000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">7000000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">6000000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">7000000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">6000000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">7000000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">6000000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">7000000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">6000000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">7000000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">6000000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">7000000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total Habitantes</th>
+                <td class="total"><strong>0120121</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, nihil? Culpa nesciunt consectetur ullam alias at sunt minus magnam odio, veritatis fugit asperiores magni nihil tenetur, nobis, officiis expedita facilis?
+    Earum mollitia quis, quo fugiat qui vel consequatur nostrum cum minima et ipsam dolorem ad ut soluta corrupti iusto repellat laborum, molestiae debitis ratione, illo quasi? Repellat nesciunt unde culpa!
+    Laborum recusandae voluptas rem culpa a, fugit ullam quos explicabo aperiam beatae reiciendis corrupti itaque nam maiores? Amet enim libero odit minima ex doloribus illum provident, perferendis impedit dignissimos exercitationem!
+    Et reiciendis culpa provident, maiores laboriosam molestias repellat illum, labore ut, est exercitationem eum quasi a fugiat perspiciatis libero accusantium id voluptates impedit sequi. Vel necessitatibus debitis id unde vero.
+    Suscipit nesciunt velit at, est voluptas maiores temporibus tenetur eos quam. Minima, esse quasi fugit placeat mollitia amet non, eum rem ad voluptatum at inventore commodi blanditiis nesciunt unde possimus!
+    Amet deleniti veritatis neque consectetur. Doloremque recusandae, est cumque, mollitia, consequatur repudiandae sequi magnam sit quae ducimus quasi placeat cum beatae dolorum delectus fugiat. Ut placeat libero esse facere totam?
+    Iste, quas libero. Eius ullam libero quis cum, deleniti iste nulla, soluta distinctio ipsum sequi amet obcaecati molestias minima omnis laborum iusto ipsa aliquam pariatur accusantium excepturi nesciunt in dolore?
+    Numquam saepe earum laborum dolor! Dicta eos voluptatem cupiditate necessitatibus perspiciatis, illo optio fugiat aspernatur ab non! Ea ratione cupiditate pariatur? Laudantium quod repellendus ratione asperiores ut quia voluptatibus fuga.
+    Commodi, error ipsam fuga dolores corporis laborum praesentium maxime et quisquam maiores deleniti tempora voluptates, odio rerum! Provident amet nostrum quas dignissimos necessitatibus unde, excepturi eligendi saepe beatae cum reprehenderit.
+    Corrupti eius autem cumque, omnis ea quod nihil quo unde optio laborum. Quisquam consequuntur architecto optio quo possimus, eius reiciendis praesentium officia odit ab, in expedita, nostrum ducimus provident quibusdam.</p>
+</body>
+</html>

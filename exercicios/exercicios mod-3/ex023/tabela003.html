@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 350px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+
+    <table>
+        <!-- 
+            TIPOS DE EXPANSÃO
+            COLSPAN -> mesclagem de colunas
+            ROWSPAN -> mesclagem de linhas
+
+            APLICADOS TAG DE DADO DENTRO DA TABLE ROW
+        -->
+
+        <tr>
+            <th colspan="2">COLUNA 1</th>
+            <th>COLUNA 3</th>
+        </tr>
+
+        <tr>
+            <td rowspan="4">1</td>
+            <td rowspan="2">2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td rowspan="2">9</td>
+        </tr>
+        <tr>
+            <td>B</td>
+        </tr>
+    </table>
+</body>
+</html>
