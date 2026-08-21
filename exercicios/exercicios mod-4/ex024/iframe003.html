@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframe</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        iframe {
+            width: 95vw;
+            border: 1px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quasi quisquam quas veritatis, reprehenderit expedita aliquam quo officiis natus placeat dicta mollitia beatae voluptatum quod, eaque alias adipisci quibusdam repudiandae?</p>
+
+    <!--
+        PARA INDICAR O LOCAL ONDE O LINK DEVE SER ABERTO, MAIS ESPECIFICAMENTE NO IFRAME, É NECESSÁRIO COLOCAR A PROPRIEDADE "name" NO IFRAME E ESSE MESMO NOME SER COLOCADO NO TARGET DO LINK, ABRINDO O LINK NO LOCAL DESEJADO
+     -->
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pagina002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pagina003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, unde aperiam? Officia nostrum aliquid quidem doloribus saepe aliquam dolorum sunt? Placeat, natus ipsa asperiores optio unde vel tenetur! In, quia.
+    Ut, laborum dolorem praesentium provident mollitia illum, odit eligendi pariatur ex, enim optio officiis quo nihil ullam et vitae sunt esse porro nemo corporis natus quibusdam quasi tempore odio! Tenetur!</p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam excepturi dolor iure earum non adipisci hic dicta officiis, maiores voluptatum ratione deleniti. Provident at voluptatibus, molestias placeat corrupti voluptas dolor!</p> <img src='imagens/cursoemvideo.png'>" frameborder="0" name="frame">
+        Infelizmente seu navegador não é compativel com isso.
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid repellendus temporibus, eveniet vero quis voluptatum id laboriosam molestias nostrum sint obcaecati quidem sed doloremque eaque commodi minus reprehenderit autem laborum.
+    Vero nostrum neque soluta, temporibus voluptatem distinctio modi? Possimus velit consequuntur quae numquam minus vero quod ex nobis excepturi, reiciendis quo enim esse placeat in minima eaque at provident delectus.</p>
+</body>
+</html>
