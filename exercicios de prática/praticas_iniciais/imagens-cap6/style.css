@@ -1,0 +1,42 @@
+h1{
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    border: solid 2px white;
+    border-radius: 50px;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+}
+
+.exemplo{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+    color: yellow;
+}
+
+img{
+    border: solid 2px yellow;
+    border-radius: 50px;
+}
+
+p{
+    color: white;
+}
+
+.emoji{
+    font-size: 50px;
+    border: solid 2px yellow;
+    border-radius: 20px;
+}
+
+.text{
+    font-weight: bold;
+}
+
+.caracteres{
+    font-size: 30px;
+}
