@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+
+    <h1>Cadastro de Usuário</h1>
+
+    <form>
+
+        <!-- Nome -->
+        <div>
+            <label for="nome">Nome completo:</label>
+
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        </div>
+
+        <br>
+
+        <!-- E-mail -->
+        <div>
+            <label for="email">E-mail:</label>
+
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+        </div>
+
+        <br>
+
+        <!-- Senha -->
+        <div>
+            <label for="senha">Senha:</label>
+
+            <input type="password" id="senha" name="senha" minlength="8" required>
+        </div>
+
+        <br>
+
+        <!-- Idade -->
+        <div>
+            <label for="idade">Idade:</label>
+
+            <input type="number" id="idade" name="idade" min="0" max="120">
+        </div>
+
+        <br>
+
+        <!-- Data -->
+        <div>
+            <label for="nascimento">Data de nascimento:</label>
+
+            <input type="date" id="nascimento" name="nascimento">
+        </div>
+
+        <br>
+
+        <!-- Sexo / Radio -->
+        <div>
+
+            <p>Sexo:</p>
+
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+
+            <label for="masculino">
+                Masculino
+            </label>
+
+
+            <input type="radio" id="feminino" name="sexo" value="feminino">
+
+            <label for="feminino">
+                Feminino
+            </label>
+
+
+            <input type="radio" id="outro" name="sexo" value="outro">
+
+            <label for="outro">
+                Outro
+            </label>
+
+        </div>
+
+        <br>
+
+        <!-- Select -->
+        <div>
+
+            <label for="estado">
+                Estado:
+            </label>
+
+            <select id="estado" name="estado">
+
+                <option value="">
+                    Selecione um estado
+                </option>
+
+                <option value="SP">
+                    São Paulo
+                </option>
+
+                <option value="PR">
+                    Paraná
+                </option>
+
+                <option value="RJ">
+                    Rio de Janeiro
+                </option>
+
+                <option value="MG">
+                    Minas Gerais
+                </option>
+
+            </select>
+
+        </div>
+
+        <br>
+
+        <!-- Checkbox -->
+        <div>
+
+            <p>Áreas de interesse:</p>
+
+            <input type="checkbox" id="programacao" name="interesses" value="programacao">
+
+            <label for="programacao">
+                Programação
+            </label>
+
+
+            <input type="checkbox" id="design" name="interesses" value="design">
+
+            <label for="design">
+                Design
+            </label>
+
+
+            <input type="checkbox" id="banco" name="interesses" value="banco_de_dados">
+
+            <label for="banco">
+                Banco de Dados
+            </label>
+
+        </div>
+
+        <br>
+
+        <!-- Texto longo -->
+        <div>
+
+            <label for="descricao">
+                Fale um pouco sobre você:
+            </label>
+
+            <br>
+
+            <textarea id="descricao" name="descricao" rows="5" cols="30" placeholder="Digite aqui..."></textarea>
+
+        </div>
+
+        <br>
+
+        <!-- Upload -->
+        <div>
+
+            <label for="arquivo">
+                Envie uma foto:
+            </label>
+
+            <input type="file" id="arquivo" name="arquivo" accept="image/*">
+
+        </div>
+
+        <br>
+
+        <!-- Termos -->
+        <div>
+
+            <input type="checkbox" id="termos" name="termos" required>
+
+            <label for="termos">
+                Aceito os termos de uso
+            </label>
+
+        </div>
+
+        <br>
+
+        <!-- Botões -->
+        <button type="submit">
+            Cadastrar
+        </button>
+
+        <button type="reset">
+            Limpar formulário
+        </button>
+
+    </form>
+
+</body>
+
+</html>

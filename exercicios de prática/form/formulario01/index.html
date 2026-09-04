@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <h1>Pratica com Formulário <span>(HTML/CSS)</span></h1>
+    </header>
+
+    <main class="main-container">
+        <div class="container-start">
+            <section class="start-section">
+                <h2>Seja bem vindo a este Formulário!</h2>
+                <p>Por favor, digite as informações solicitadas no formulário abaixo...</p>
+            </section>
+        </div>
+
+        <section class="mid-section">
+            <div class="form-container">
+                <div class="form-fields">
+                    <form id="cadastro-form" autocomplete="off">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu email..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" name="senha" placeholder="Digite sua senha..." required>
+                        </div>
+
+                        <div class="form-group date">
+                            <label for="data-nascimento">Data de Nascimento</label>
+                            <input type="date" id="data-nascimento" name="data-nascimento" required>
+                        </div>
+                    </form>
+
+                    <div class="realizar-login">
+                        <p>Já possui conta? Realizar <a href="">Login</a></p>
+                    </div>
+                </div>
+
+                <div class="form-submit">
+                    <h3 class="title-submit">
+                        Cadastro
+                    </h3>
+
+                    <button class="btn-submit" type="submit" form="cadastro-form">
+                        Realizar Cadastro
+                    </button>
+
+                    <button class="btn-clean" type="reset" form="cadastro-form">
+                        Limpar Formulário
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <div class="info-footer">
+            <p>Gabriel Casarini</p>
+            <p>Ciência da Computação</p>
+        </div>
+    </footer>
+</body>
+
+</html>
