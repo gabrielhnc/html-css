@@ -1,0 +1,45 @@
+/* VERSÃO MOBILE FIRST */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background: black url(../img/back-phone.jpg) center center no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+main {
+    background-color: rgba(214, 211, 211, 0.76);
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 0px black;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+img#phone { display: block;} /* SOMENTE DISPLAY DA IMAGEM DE TELEFONE ATIVADA */
+img#tablet { display: none;}
+img#pc { display: none;}
+img#print { display: none;}
+img#tv { display: none;}

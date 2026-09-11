@@ -1,0 +1,84 @@
+/* VERSAO - DEMAIS MIDIAS */
+
+/* TYPICAL DEVICE BREAKPOINTS
+----------------------------
+Small Phone: até 479px
+Phone: 480px até 639px
+Small Tablet: 640px até 767px
+Tablet: 768px até 1023px
+Laptop: 1024px até 1279px
+Desktop: 1280px até 1535px
+Large Desktop: acima de 1536px
+----------------------------
+*/
+
+/* MEDIA QUERY - IMPRESSORA */
+@media print {
+        body {
+            background-image: url(../img/back-print.jpg); /* PARA IMPRESSÕES, BACKGROUND NÃO É CONSIDERADO (DESNECESSARIO) */
+            font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: 'Impresso de forma personalizada por https://github.com/gabrielhnc';
+    }
+
+    img#phone { display: none;} 
+    img#tablet { display: none;} /* SOMENTE DISPLAY DO TABLET ATIVADO */
+    img#pc { display: none;}
+    img#print { display: block;}
+    img#tv { display: none;}
+}
+
+/* MEDIA QUERY - TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-image: url(../img/back-tablet.jpg);
+    }
+
+    img#phone { display: none;} 
+    img#tablet { display: block;} /* SOMENTE DISPLAY DO TABLET ATIVADO */
+    img#pc { display: none;}
+    img#print { display: none;}
+    img#tv { display: none;}
+}
+
+/* MEDIA QUERY - DESKTOP */
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    body {
+        background-image: url(../img/back-pc.jpg);
+    }
+
+    img#phone { display: none;} 
+    img#tablet { display: none;}
+    img#pc { display: block;} /* SOMENTE DISPLAY DO DESKTOP ATIVADO */
+    img#print { display: none;}
+    img#tv { display: none;}
+}
+
+/* MEDIA QUERY - TELAS GRANDES */
+@media screen and (min-width: 1301px) {
+    body {
+        background-image: url(../img/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#phone { display: none;} 
+    img#tablet { display: none;}
+    img#pc { display: none;} /* SOMENTE DISPLAY DO DESKTOP ATIVADO */
+    img#print { display: none;}
+    img#tv { display: block;}
+}

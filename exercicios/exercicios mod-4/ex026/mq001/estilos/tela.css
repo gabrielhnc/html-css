@@ -1,0 +1,40 @@
+/* ESTILO PARA TELAS */
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+header > h1 {
+    text-align: center;
+    background-color: gray;
+    padding: 30px;
+}
+
+nav {
+    background-color: rgb(63, 62, 62);
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+ul > li {
+    display: inline-block;
+    padding: 10px;
+    background-color: black;
+}
+
+article {
+    display: block;
+    margin: auto;
+    width: 600px;
+}
