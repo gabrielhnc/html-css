@@ -1,0 +1,132 @@
+.cabecalho {
+    background: var(--cor-primaria);
+    color: white;
+    text-align: center;
+}
+
+.cabecalho__titulo {
+    padding: 1.25rem 1rem;
+    font-size: clamp(1.7rem, 5vw, 2.5rem);
+}
+
+.menu-botao {
+    align-items: center;
+    background: var(--cor-primaria-escura);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0.65rem 1rem;
+    width: 100%;
+}
+
+.menu-botao:hover,
+.menu-botao:focus-visible {
+    background: var(--cor-destaque);
+}
+
+.menu-botao__icone {
+    font-size: 1.25rem;
+}
+
+.menu {
+    background: var(--cor-superficie);
+    display: none;
+    box-shadow: var(--sombra-suave);
+}
+
+.menu--aberto {
+    display: block;
+}
+
+.menu__lista {
+    display: grid;
+    gap: 0.35rem;
+    list-style: none;
+    padding: 0.75rem;
+}
+
+.menu__link {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    color: var(--cor-primaria);
+    display: block;
+    font-weight: bold;
+    padding: 0.6rem 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.menu__link:hover,
+.menu__link:focus-visible {
+    background: var(--cor-destaque);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.conteudo {
+    background: var(--cor-superficie);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra-suave);
+    margin: 1.25rem auto;
+    max-width: 46.75rem;
+    padding: clamp(1rem, 4vw, 2rem);
+    width: min(90%, 46.75rem);
+}
+
+.secao {
+    scroll-margin-top: 4rem;
+}
+
+.secao+.secao {
+    border-top: 1px solid var(--cor-borda);
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.secao__titulo {
+    background: linear-gradient(90deg, var(--cor-primaria-escura), var(--cor-primaria), #5b91bd);
+    border-radius: var(--raio);
+    color: white;
+    font-size: clamp(1.25rem, 3vw, 1.65rem);
+    margin-bottom: 1rem;
+    padding: 0.65rem 0.8rem;
+}
+
+.secao p {
+    margin-bottom: 0.85rem;
+    text-align: justify;
+    text-indent: 1rem;
+}
+
+.secao p:last-child {
+    margin-bottom: 0;
+}
+
+.topo-botao {
+    align-items: center;
+    background: var(--cor-destaque);
+    border: 2px solid white;
+    border-radius: 50%;
+    bottom: 1rem;
+    box-shadow: var(--sombra-suave);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5rem;
+    height: 3rem;
+    justify-content: center;
+    line-height: 1;
+    position: fixed;
+    right: 1rem;
+    transition: background-color 160ms ease, transform 160ms ease;
+    width: 3rem;
+}
+
+.topo-botao:hover,
+.topo-botao:focus-visible {
+    background: var(--cor-primaria-escura);
+    transform: translateY(-3px);
+}

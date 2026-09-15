@@ -1,0 +1,29 @@
+@media screen and (min-width: 48rem) {
+    .menu-botao {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .menu__lista {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 46.75rem;
+    }
+
+    .menu__link {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .conteudo {
+        margin-top: 2rem;
+    }
+}

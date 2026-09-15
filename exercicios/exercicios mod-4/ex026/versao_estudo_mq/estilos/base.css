@@ -1,0 +1,39 @@
+/* Estilos gerais e variáveis reutilizáveis. */
+
+:root {
+    --cor-fundo: #eef2f5;
+    --cor-superficie: #ffffff;
+    --cor-primaria: #123c69;
+    --cor-primaria-escura: #092b4c;
+    --cor-destaque: #af7348;
+    --cor-texto: #26323b;
+    --cor-borda: #d5dde3;
+    --sombra-suave: 0 0.5rem 1.5rem rgba(9, 43, 76, 0.12);
+    --raio: 0.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+button,
+a {
+    font: inherit;
+}
+
+button {
+    border: 0;
+}
