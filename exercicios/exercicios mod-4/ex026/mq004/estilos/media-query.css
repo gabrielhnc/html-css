@@ -14,9 +14,9 @@ Large Desktop: acima de 1536px
 
 /* MEDIA QUERY - IMPRESSORA */
 @media print {
-        body {
-            background-image: url(../img/back-print.jpg); /* PARA IMPRESSÕES, BACKGROUND NÃO É CONSIDERADO (DESNECESSARIO) */
-            font-family: 'Courier New', Courier, monospace;
+    body {
+        background-image: url(../img/back-print.jpg); /* PARA IMPRESSÕES, BACKGROUND NÃO É CONSIDERADO (DESNECESSARIO) */
+        font-family: 'Courier New', Courier, monospace;
     }
 
     main {
@@ -78,7 +78,7 @@ Large Desktop: acima de 1536px
 
     img#phone { display: none;} 
     img#tablet { display: none;}
-    img#pc { display: none;} /* SOMENTE DISPLAY DO DESKTOP ATIVADO */
+    img#pc { display: none;} /* SOMENTE DISPLAY DE TELAS GRANDES ATIVADO */
     img#print { display: none;}
     img#tv { display: block;}
 }

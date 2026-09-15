@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Query</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>Site Teste MQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+
+<body onresize="mudouTamanho()">
     <header>
-        <h1>Site Teste MQ</h1>
-        <span id="menu-burguer" class="material-symbols-outlined">menu</span>
-        <nav>
+        <h1>MQ Test</h1>
+        <span id="menu-burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="navOptions">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#estudos">Estudos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><a href="#testes">Testes</a></li>
+                <li><a href="#exercicios">Exercícios</a></li>
             </ul>
         </nav>
     </header>
@@ -24,49 +28,75 @@
     <main>
         <section id="home">
             <article>
-                <h2>Home</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde eos reprehenderit repudiandae minus sed, rem distinctio inventore omnis porro necessitatibus perspiciatis iste, molestias iure dolore velit? Temporibus, facilis? Nostrum?
-                Nisi aliquam rem dolore similique dolor officiis non dicta sint magni aspernatur nobis nesciunt, pariatur aliquid perferendis ea id animi error officia! Exercitationem alias unde sunt voluptatum facilis ut nobis.
-                Cumque, dignissimos! Vero, facere consequuntur! Quos deleniti modi animi sint. Necessitatibus eaque provident quae, obcaecati odit esse totam possimus nesciunt vero est, quaerat dolor quas distinctio, aut ea quod repellendus!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde eos reprehenderit repudiandae minus sed, rem distinctio inventore omnis porro necessitatibus perspiciatis iste, molestias iure dolore velit? Temporibus, facilis? Nostrum?
-                Nisi aliquam rem dolore similique dolor officiis non dicta sint magni aspernatur nobis nesciunt, pariatur aliquid perferendis ea id animi error officia! Exercitationem alias unde sunt voluptatum facilis ut nobis.
-                Cumque, dignissimos! Vero, facere consequuntur! Quos deleniti modi animi sint. Necessitatibus eaque provident quae, obcaecati odit esse totam possimus nesciunt vero est, quaerat dolor quas distinctio, aut ea quod repellendus!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde eos reprehenderit repudiandae minus sed, rem distinctio inventore omnis porro necessitatibus perspiciatis iste, molestias iure dolore velit? Temporibus, facilis? Nostrum?
-                Nisi aliquam rem dolore similique dolor officiis non dicta sint magni aspernatur nobis nesciunt, pariatur aliquid perferendis ea id animi error officia! Exercitationem alias unde sunt voluptatum facilis ut nobis.
-                Cumque, dignissimos! Vero, facere consequuntur! Quos deleniti modi animi sint. Necessitatibus eaque provident quae, obcaecati odit esse totam possimus nesciunt vero est, quaerat dolor quas distinctio, aut ea quod repellendus!</p>
+                <h2>Bem-vindo ao MQ Test</h2>
+                <p>Este espaço reúne informações, conteúdos e atividades relacionadas ao universo da tecnologia e do
+                    desenvolvimento web.</p>
+                <p>O desenvolvimento de páginas envolve conceitos importantes, desde a estrutura do conteúdo até cores,
+                    fontes, espaçamentos e organização visual.</p>
+                <p>Uma página moderna também precisa funcionar corretamente em diferentes tamanhos de tela, tornando a
+                    responsividade fundamental.</p>
             </article>
         </section>
 
         <section id="estudos">
             <article>
                 <h2>Estudos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde eos reprehenderit repudiandae minus sed, rem distinctio inventore omnis porro necessitatibus perspiciatis iste, molestias iure dolore velit? Temporibus, facilis? Nostrum?
-                Nisi aliquam rem dolore similique dolor officiis non dicta sint magni aspernatur nobis nesciunt, pariatur aliquid perferendis ea id animi error officia! Exercitationem alias unde sunt voluptatum facilis ut nobis.
-                Cumque, dignissimos! Vero, facere consequuntur! Quos deleniti modi animi sint. Necessitatibus eaque provident quae, obcaecati odit esse totam possimus nesciunt vero est, quaerat dolor quas distinctio, aut ea quod repellendus!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde eos reprehenderit repudiandae minus sed, rem distinctio inventore omnis porro necessitatibus perspiciatis iste, molestias iure dolore velit? Temporibus, facilis? Nostrum?
-                Nisi aliquam rem dolore similique dolor officiis non dicta sint magni aspernatur nobis nesciunt, pariatur aliquid perferendis ea id animi error officia! Exercitationem alias unde sunt voluptatum facilis ut nobis.
-                Cumque, dignissimos! Vero, facere consequuntur! Quos deleniti modi animi sint. Necessitatibus eaque provident quae, obcaecati odit esse totam possimus nesciunt vero est, quaerat dolor quas distinctio, aut ea quod repellendus!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde eos reprehenderit repudiandae minus sed, rem distinctio inventore omnis porro necessitatibus perspiciatis iste, molestias iure dolore velit? Temporibus, facilis? Nostrum?
-                Nisi aliquam rem dolore similique dolor officiis non dicta sint magni aspernatur nobis nesciunt, pariatur aliquid perferendis ea id animi error officia! Exercitationem alias unde sunt voluptatum facilis ut nobis.
-                Cumque, dignissimos! Vero, facere consequuntur! Quos deleniti modi animi sint. Necessitatibus eaque provident quae, obcaecati odit esse totam possimus nesciunt vero est, quaerat dolor quas distinctio, aut ea quod repellendus!</p>
+                <p>O aprendizado de desenvolvimento web pode ser dividido em diferentes áreas. HTML organiza o conteúdo
+                    e CSS define sua apresentação.</p>
+                <p>Recursos como Flexbox, Grid, posicionamento e Media Queries ajudam a criar layouts adaptáveis para
+                    diferentes dispositivos.</p>
+                <p>JavaScript acrescenta comportamento e interatividade às páginas, respondendo às ações do usuário.</p>
             </article>
         </section>
 
         <section id="contato">
             <article>
                 <h2>Contato</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde eos reprehenderit repudiandae minus sed, rem distinctio inventore omnis porro necessitatibus perspiciatis iste, molestias iure dolore velit? Temporibus, facilis? Nostrum?
-                Nisi aliquam rem dolore similique dolor officiis non dicta sint magni aspernatur nobis nesciunt, pariatur aliquid perferendis ea id animi error officia! Exercitationem alias unde sunt voluptatum facilis ut nobis.
-                Cumque, dignissimos! Vero, facere consequuntur! Quos deleniti modi animi sint. Necessitatibus eaque provident quae, obcaecati odit esse totam possimus nesciunt vero est, quaerat dolor quas distinctio, aut ea quod repellendus!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde eos reprehenderit repudiandae minus sed, rem distinctio inventore omnis porro necessitatibus perspiciatis iste, molestias iure dolore velit? Temporibus, facilis? Nostrum?
-                Nisi aliquam rem dolore similique dolor officiis non dicta sint magni aspernatur nobis nesciunt, pariatur aliquid perferendis ea id animi error officia! Exercitationem alias unde sunt voluptatum facilis ut nobis.
-                Cumque, dignissimos! Vero, facere consequuntur! Quos deleniti modi animi sint. Necessitatibus eaque provident quae, obcaecati odit esse totam possimus nesciunt vero est, quaerat dolor quas distinctio, aut ea quod repellendus!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde eos reprehenderit repudiandae minus sed, rem distinctio inventore omnis porro necessitatibus perspiciatis iste, molestias iure dolore velit? Temporibus, facilis? Nostrum?
-                Nisi aliquam rem dolore similique dolor officiis non dicta sint magni aspernatur nobis nesciunt, pariatur aliquid perferendis ea id animi error officia! Exercitationem alias unde sunt voluptatum facilis ut nobis.
-                Cumque, dignissimos! Vero, facere consequuntur! Quos deleniti modi animi sint. Necessitatibus eaque provident quae, obcaecati odit esse totam possimus nesciunt vero est, quaerat dolor quas distinctio, aut ea quod repellendus!</p>
+                <p>Para entrar em contato, utilize um dos canais disponíveis abaixo:</p>
+                <p><strong>E-mail:</strong> contato@portaldigital.com</p>
+                <p><strong>Telefone:</strong> (00) 00000-0000</p>
+                <p><strong>Atendimento:</strong> segunda a sexta-feira, das 08:00 às 18:00.</p>
             </article>
         </section>
 
+        <section id="testes">
+            <article>
+                <h2>Testes</h2>
+                <p>Esta seção pode ser utilizada para testar o funcionamento e a aparência da página em diferentes
+                    resoluções.</p>
+                <p>As Media Queries permitem modificar fontes, margens, espaçamentos, menus e outros elementos de acordo
+                    com o dispositivo.</p>
+            </article>
+        </section>
+
+        <section id="exercicios">
+            <article>
+                <h2>Exercícios</h2>
+                <p>A realização de exercícios permite colocar em prática os conceitos estudados e identificar quais
+                    assuntos precisam de maior atenção.</p>
+                <p><strong>Exercício:</strong> teste diferentes tamanhos de fonte, margens, espaçamentos e larguras para
+                    observar o comportamento do layout.</p>
+            </article>
+        </section>
     </main>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                navOptions.style.display = 'block'
+            } else {
+                navOptions.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (navOptions.style.display == 'block') {
+                navOptions.style.display = 'none'
+            } else {
+                navOptions.style.display = 'block'
+            }
+        }
+    </script>
 </body>
+
 </html>
