@@ -1,0 +1,42 @@
+/* TYPICAL DEVICE BREAKPOINTS (RESUMIDO)
+----------------------------
+Phone: até 768px
+Tablet: 769px até 1023
+Desktop: 1024px até 1279px
+Large Desktop: acima de 1280px 
+----------------------------
+*/
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    #login {
+        width: 80vw;
+    }
+
+    #imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    #formulario {
+        float: left;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #login {
+        width: 950px;
+    }
+
+    #imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    #formulario {
+        float: right;
+        width: 50%;
+    }
+}

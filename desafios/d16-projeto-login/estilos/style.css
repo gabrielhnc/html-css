@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* PALETA CORES */
+
+:root {
+    --cor-fundo-geral:#cfd2d6;
+    --cor-fundo-login: #FFFFFF;
+    --cor-texto: #1E2D24;
+    --cor-btn: #2D5A27;
+    --cor-btn-hover: #1e900f;
+    --cor-borda: #E2E8F0;
+
+    --fonte-padrao: 'Inter', sans-serif;
+    --fonte-titulo: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-padrao);
+    color: var(--cor-texto);
+}
+
+body, html {
+    background-color: var(--cor-fundo-geral);
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: var(--cor-fundo-login);
+    width: 250px;
+    height: 500px;
+    border-radius: 8px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.28);
+}
+
+#imagem {
+    display: block;
+    background: var(--cor-fundo-geral) url(../img/nature-pic.jpg) no-repeat center center;
+    background-size: cover;
+    height: 170px;
+
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.23);
+}
+
+#formulario {
+    display: block;
+    padding: 10px;
+}
