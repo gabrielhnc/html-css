@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 
+            A propriedade ORDER é aplicada no valor 0 para todos os elementos filhos de forma inicial. 
+            Caso seja alterado, os elementos de menor valor ficam mais proximos ao main-start
+        */
+
+        .container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #i1 {
+            order: -3;
+        }
+
+        #i2 {
+            order: 0;
+        }
+
+        #i3 {
+            order: -7;
+        }
+
+        #i4 {
+            order: 4;
+        }
+
+        #i5 {
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+    </div>
+</body>
+</html>
