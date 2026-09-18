@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 
+            JUSTIFY-CONTENT -> Alinha em relação ao eixo central (main-axis)
+            Se direction = row, justify content alinha no eixo horizontal
+
+            Propriedades do justify-content:
+                flex-start (Inicia no main-start)
+                flex-end (Inicia no main-end)
+                center (Centraliza os elementos)
+                space-between (Elementos das extremidas ficam colados)
+                space-evenly (Mesma distancia entre todos os elementos e espaços vazios)
+                space-around (Calculo de uma caixa virtual, uma para cada elemento, e a centralização do elemento real em relação a caixa criada de forma virtual)
+
+            ALIGN-ITEMS -> Alinha no sentido do eixo transversal (cross-axis)
+            Por padrão, o valor do align items é STRETCH (esticar os elementos)
+
+            A DEPENDER DO EIXO PRINCIPAL, O ALIGN ITEMS APLICA AS MUDANÇAS DE FORMA DISTINTA, PORÉM SEGUINDO O CROSS-AXIS CORRESPONDENTE
+            EX:
+                Se flex-direction = row, cross-axis é vertical, tendo o cross-start no inicio e cross-end ao fim, e ao centralizar, com center, os espaçamentos verticais ficam iguais, e usando justify-content, também com center, os espaçamentos horizontais ficam iguais
+
+            Propriedades do aligm-items:
+                stretch
+                flex-start
+        */
+
+        .container {
+            background-color: lightsalmon;
+            height: 300px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+</body>
+</html>
