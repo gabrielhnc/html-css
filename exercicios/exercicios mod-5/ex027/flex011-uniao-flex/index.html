@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 
+            UNIAO DAS 3 PROPRIEADES: FLEX-BASIS, FLEX-GROW e FLEX-SHRINK
+        */
+
+        .container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            flex-basis: 200px;
+        }
+
+        #i1 {
+            flex-shrink: 1;
+            flex-grow: 0;
+            order: 2;
+        }
+
+        #i2 {
+            flex-shrink: 2;
+            flex-grow: 3;
+            order: -1;
+        }
+
+        #i3 {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+    </div>
+</body>
+</html>

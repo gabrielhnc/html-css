@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 
+            PROPRIEDADE FLEX (ORDEM DEFINIÇÃO) -> flex: grow shrink basis
+
+            Exemplo de definição -> flex: 0 1 150px
+
+            Caso for (flex: initial), os valores automaticos de cada uma das propriedades prevalece.
+
+            Para elas são:
+                GROW -> 0
+                SHRINK -> 1
+                BASIS -> auto (cresce conforme o tamanho do conteudo)
+
+            Para quando as propriedades forem -> flex: 0 0 auto (NAO FLEXIVEL PARA O CRESCIMENTO)
+            Pode ser resumido como -> (flex: none)
+
+            E para as proprieades sendo flex: 1 1 auto (FLEXIVEL PARA O CRESCIMENTO -> SHRINK e GROW)
+            Pode ser resumido como -> (flex: auto)
+
+            DEFINIR A PROPRIEADE FLEX DIRETAMENTE COM UM VALOR (flex: 1) indica que as proprieades receberão os seguintes valores:
+                GROW: 1
+                SHRINK: 1
+                BASIS: 0% (Diferença principal entre AUTO e flex: 1)
+
+            Com flex: 1, a definição do basis como 0% indica que ao considerar o crescimento deste item, seu tamanho inicial será 0.
+            Com auto, o valor inicial para o crescimento já será considerado, podendo ter diferenças entre um e o outro.
+
+            OBS: O valor definido na propriedade flex: 1 pode ser alterado para qualquer outro, porém define somente a alteração referente a propriedade grow.
+        */
+
+        .container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #i1 {
+            flex: 2 0 200px;
+        }
+
+        #i2 {
+            flex: 3 2 150px
+        }
+
+        #i3 {
+            flex: 1 1 300px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+    </div>
+</body>
+</html>
