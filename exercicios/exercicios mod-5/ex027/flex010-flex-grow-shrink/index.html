@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 
+            FLEX GROW -> propriedade do flex que atua sobre os itens filhos de um container.
+            Valor padrão é 0 (FLEX-GROW: 0)
+            Para possibilitar o crescimento dinamico dos itens conforme o tamanho da caixa pai, é necessario modificar de 0 para 1.
+
+            FLEX GROW, se aplicado um valor 2 na sua definição, ele cresce mais do que um outro filho que esta com 1. Caso definido valores maiores que 1, também crescerão mais.
+
+            FLEX-SHRINK -> propriedade do flex que atua sobre os itens filhos de um container.
+            Valor padrão é 1 (FLEX-SHRINK: 1)
+            Com a propriedade ativada, é possível diminuir os itens dentros de um container pai quando o conteudo e tamanho deles não se comportam mais ao haver uma diminuição de tamanho no container pai.
+
+            FLEX SHRINK, se aplicado um valor 2 na sua definição, ele diminui mais do que um outro filho que esta com 1. Caso definido valores maiores que 1, também diminuirão mais.
+
+            OBS: Com a atuação do flex-basis, que possibilita a definição de uma "Largura" para o crescimento, o flex-shrink e grow "dependem" do tamanho para que possam atuar em relação ao container pai.
+            
+            Ex: com flex-basis: auto, o conteudo se arranja para caber dentro da caixa com tamanho que podem ser diferentes entre os filhos a depender do conteudo. Agora com o flex-basis definido de forma fixa, com 100px, por exemplo, o flex-grow e shrink atuam baseado nesse valor em relação a caixa do container pai.
+        */
+
+        .container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+</body>
+</html>
