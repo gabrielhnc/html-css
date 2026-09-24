@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==================== */
+/* CONTAINER            */
+/* ==================== */
+
+.app-container {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+    width: 100%;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ==================== */
+/* HEADER CONTAINER     */
+/* ==================== */
+
+.menu-container {
+    background-color: rgb(7, 66, 7);
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.401);
+    z-index: 10;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px;
+    color: white;
+}
+
+/* DEFINIÇÃO FIXA DO BASIS PARA ESPAÇAMENTO DO H1 */
+
+.menu-container h1 {
+    flex: 0 0 300px;
+}
+
+.lista-itens-nav {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+
+    list-style-type: none;
+}
+
+.item-nav {
+    background-color: rgb(11, 84, 11);
+
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
+
+    border-radius: 8px;
+
+    transition: 0.2s;
+
+    cursor: pointer;
+}
+
+.item-nav:hover {
+    background-color: rgb(35, 122, 20);
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.685);
+}
+
+/* ==================== */
+/* MAIN CONTAINER       */
+/* ==================== */
+
+.main-container {
+    padding: 15px;
+    flex: 1;
+
+    background-color: rgb(218, 255, 218);
+}
+
+.main-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.info-container {
+    flex: 1 1 600px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.377);
+
+    color: black;
+    background-color: rgb(90, 235, 90);
+}
