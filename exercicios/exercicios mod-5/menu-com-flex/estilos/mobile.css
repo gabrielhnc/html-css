@@ -1,6 +1,6 @@
 /* TELAS PEQUENAS (QUEBRA DO NAV) */
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 650px) {
     .menu-wrapper {
         display: flex;
         flex-flow: column nowrap;
@@ -13,7 +13,30 @@
     }
 
     .menu-container h1 {
-        flex: 0;
+        flex-basis: 40px;
+    }
+    
+    #menu-burguer {
+        background-color: rgb(3, 48, 3);
+        border: 1px solid rgba(13, 172, 13, 0.47);
+        width: 20vw;
+        border-radius: 10px;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 7px;
+
+        transition: 0.2s;
+    }
+
+    #menu-burguer:hover {
+        background-color: rgb(9, 91, 9);
+        cursor: pointer;
+    }
+
+    #menu-burguer:active {
+        background-color: rgb(9, 91, 9);
+        border: 1px solid white;
     }
 
     .lista-itens-nav {
@@ -27,7 +50,7 @@
     .item-nav {
         text-align: center;
         flex: 1;
-        width: 300px;
+        width: 80vw;
         padding: 15px;
     }
 
